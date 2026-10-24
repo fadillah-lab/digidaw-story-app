@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f4ef" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/icon-192x192.png" />
+    <title>Story App — Cerita dari komunitas DIGIDAW</title>
+    <link rel="preconnect" href="https://tile.openstreetmap.org" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/index.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten</a>
+    <header class="site-header">
+      <a class="brand" href="#/stories" aria-label="Story App, beranda"
+        ><span class="brand-mark" aria-hidden="true">S</span
+        ><span>story<span class="brand-light">.space</span></span></a
+      >
+      <nav aria-label="Navigasi utama">
+        <button class="install-button" type="button" data-install-app hidden>Instal aplikasi</button>
+        <a href="#/stories">Jelajahi</a><a href="#/saved-stories">Tersimpan</a
+        ><a href="#/add-story" data-auth-link hidden
+          >Bagikan cerita <span aria-hidden="true">↗</span></a
+        ><a href="#/login" data-guest-link>Masuk</a
+        ><button class="nav-logout" type="button" data-logout hidden>
+          Keluar
+        </button>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <div id="app" aria-live="polite"></div>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#/stories"
+        ><span class="brand-mark" aria-hidden="true">S</span>story.space</a
+      ><span>Cerita kecil, dunia yang lebih dekat.</span
+      ><span>© Story App · Digidaw Community</span>
+    </footer>
+  </body>
+</html>
